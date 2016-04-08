@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971ACB411CB7498E00238D0D /* AddTwoNumberViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 971ACB401CB7498E00238D0D /* AddTwoNumberViewControllerTests.m */; };
+		971ACB441CB749AD00238D0D /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971ACB431CB749AD00238D0D /* RSViewController.m */; };
 		9B1ACE8B1CB6AF12003A2FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ACE8A1CB6AF12003A2FEF /* main.m */; };
 		9B1ACE8E1CB6AF12003A2FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ACE8D1CB6AF12003A2FEF /* AppDelegate.m */; };
 		9B1ACE911CB6AF12003A2FEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1ACE901CB6AF12003A2FEF /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		971ACB401CB7498E00238D0D /* AddTwoNumberViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTwoNumberViewControllerTests.m; path = ../AddTwoNumberViewControllerTests.m; sourceTree = "<group>"; };
+		971ACB421CB749AD00238D0D /* RSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSViewController.h; path = ../RSViewController.h; sourceTree = "<group>"; };
+		971ACB431CB749AD00238D0D /* RSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSViewController.m; path = ../RSViewController.m; sourceTree = "<group>"; };
 		9B1ACE861CB6AF12003A2FEF /* AddingNumberUnitTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddingNumberUnitTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1ACE8A1CB6AF12003A2FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B1ACE8C1CB6AF12003A2FEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +114,8 @@
 				9B1ACE8D1CB6AF12003A2FEF /* AppDelegate.m */,
 				9B1ACEBC1CB6B09C003A2FEF /* RSAddition.h */,
 				9B1ACEBD1CB6B09C003A2FEF /* RSAddition.m */,
+				971ACB421CB749AD00238D0D /* RSViewController.h */,
+				971ACB431CB749AD00238D0D /* RSViewController.m */,
 				9B1ACE8F1CB6AF12003A2FEF /* ViewController.h */,
 				9B1ACE901CB6AF12003A2FEF /* ViewController.m */,
 				9B1ACE921CB6AF12003A2FEF /* Main.storyboard */,
@@ -132,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				9B1ACEA31CB6AF12003A2FEF /* AddingNumberUnitTDDTests.m */,
+				971ACB401CB7498E00238D0D /* AddTwoNumberViewControllerTests.m */,
 				9B1ACEA51CB6AF12003A2FEF /* Info.plist */,
 			);
 			path = AddingNumberUnitTDDTests;
@@ -276,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971ACB441CB749AD00238D0D /* RSViewController.m in Sources */,
 				9B1ACEBE1CB6B09C003A2FEF /* RSAddition.m in Sources */,
 				9B1ACE911CB6AF12003A2FEF /* ViewController.m in Sources */,
 				9B1ACE8E1CB6AF12003A2FEF /* AppDelegate.m in Sources */,
@@ -289,6 +298,7 @@
 			files = (
 				9B1ACEBF1CB6B09C003A2FEF /* RSAddition.m in Sources */,
 				9B1ACEA41CB6AF12003A2FEF /* AddingNumberUnitTDDTests.m in Sources */,
+				971ACB411CB7498E00238D0D /* AddTwoNumberViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,10 +429,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = AddingNumberUnitTDD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AddingNumberUnitTDD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b8a46e7-c4d3-462f-800c-767b26c28816";
 			};
 			name = Debug;
 		};
@@ -430,10 +442,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = AddingNumberUnitTDD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AddingNumberUnitTDD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9b8a46e7-c4d3-462f-800c-767b26c28816";
 			};
 			name = Release;
 		};
@@ -504,6 +518,7 @@
 				9B1ACEB51CB6AF12003A2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B1ACEB61CB6AF12003A2FEF /* Build configuration list for PBXNativeTarget "AddingNumberUnitTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +527,7 @@
 				9B1ACEB81CB6AF12003A2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B1ACEB91CB6AF12003A2FEF /* Build configuration list for PBXNativeTarget "AddingNumberUnitTDDUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +536,7 @@
 				9B1ACEBB1CB6AF12003A2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

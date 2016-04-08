@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic,strong) IBOutlet UITextField *firstNumberTextField;
+@property (nonatomic,strong) IBOutlet UITextField *secondNumberTextField;
 
 @end
 
